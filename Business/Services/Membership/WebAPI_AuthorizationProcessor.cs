@@ -1,7 +1,6 @@
 ﻿using Business.Interfaces;
 using Business.Models.Membership;
 using Models.Application;
-using Models.Entities;
 using System;
 
 namespace Business.Services.Membership {

@@ -1,6 +1,5 @@
 ﻿using Business.Models.Membership;
 using Models.Application;
-using Models.Entities;
 
 namespace Business.Interfaces {
 	public interface IAuthorizationProcessor {

@@ -1,7 +1,6 @@
 ﻿using Data.Dapper.Models;
 using Data.Interfaces;
 using Models.Application;
-using Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
