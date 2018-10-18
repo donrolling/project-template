@@ -76,9 +76,7 @@ namespace Tests {
 			services.AddSingleton<IAuthenticationPersistenceService, Test_AuthenticationPersistenceService>();
 
 			//GENERATED
-			services.AddTransient<IClientRepository, ClientDapperRepository>();
-			services.AddTransient<IClientService, ClientService>();			
-
+			
 			return services.BuildServiceProvider();
 		}
 	}
