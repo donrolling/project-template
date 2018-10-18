@@ -1,0 +1,19 @@
+﻿using Data.Dapper.Models;
+using Data.Interfaces;
+using Data.Models.Entities;
+using System;
+using System.Threading.Tasks;
+
+namespace @Model.Namespace {
+	public interface I<s>@Model.Name.Value</s>Service {
+		@if(Model.Keys.Count > 1) {
+		<s>Task<TransactionResponse> Create(<s>@Model.Name.Value</s> <s>@Model.Name.LowerCamelCase</s>);</s>
+		}else{
+		<s>Task<InsertResponse<s><@Model.Keys[0].DataType></s>> Create(<s>@Model.Name.Value</s> <s>@Model.Name.LowerCamelCase</s>);</s>
+		}
+		Task<TransactionResponse> Update(<s>@Model.Name.Value</s> <s>@Model.Name.LowerCamelCase</s>);
+		Task<TransactionResponse> Delete(<s>@Model.CSharpKeySignature</s>);
+		Task<<s>@Model.Name.Value</s>> SelectById(<s>@Model.CSharpKeySignature</s>);
+		Task<IDataResult<<s>@Model.Name.Value</s>>> ReadAll(PageInfo pageInfo);
+	}
+}
