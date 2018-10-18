@@ -1,7 +1,7 @@
 {
-	"ConnectionString": "Data Source=971JT039H2\\DROLLING;Initial Catalog=Identity;Integrated Security=SSPI;",
+	"ConnectionString": "",
 	"ProcessTemplateStubs": false,
-	"OutputDirectory": "C:\\Projects\\IdentityServer\\Tools\\CodeGeneratorOutput",
+	"OutputDirectory": "",
 	"IncludeTheseTablesOnly": [],
 	"IncludeTheseTemplatesOnly": [],
 	"ExcludeTheseTables": [],
