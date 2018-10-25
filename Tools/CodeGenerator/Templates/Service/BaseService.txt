@@ -1,14 +1,12 @@
 ﻿using Business.Interfaces;
 using Business.Services.EntityServices.Base;
 using Common.Transactions;
-using Data.Dapper.Enums;
 using Data.Dapper.Models;
-using Data.Interfaces;
-using Data.Models.Base;
-using Data.Models.Entities;
 using Data.Repository.Interfaces;
 using Microsoft.Extensions.Logging;
-using System;
+using Models.Base;
+using Models.Entities;
+using Models.Interfaces;
 using System.Threading.Tasks;
 
 namespace @Model.Namespace {

@@ -1,5 +1,5 @@
 ﻿using Common;
-using Data.Models.Entities;
+using Models.Entities;
 using Data.Repository.Interfaces;
 using Business.Service.EntityServices.Interfaces;
 using Data.Interfaces;

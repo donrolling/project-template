@@ -1,22 +1,19 @@
 ﻿using AutoFixture;
-using Business.Interfaces;
 using Business.Service.EntityServices.Interfaces;
-using Data.Models.Entities;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Models.Entities;
 using System.Threading.Tasks;
 using Tests.Models;
-using Tests.Utilities;
 
-namespace @Model.Namespace {
+namespace @Model.Namespace : TestBase {
 	[TestClass]
 	public class <s>@Model.Name.Value</s>IntegrationTests : TestBase {
 		public IMembershipService MembershipService { get; private set; }
 		public I<s>@Model.Name.Value</s>Service <s>@Model.Name.Value</s>Service { get; private set; }
 
 		public <s>@Model.Name.Value</s>IntegrationTests() {
-			this.MembershipService = MembershipHelper.GetMembershipService_And_SetCurrentUser(this.TestEnv, this.AppSettings).Result;
-			this.<s>@Model.Name.Value</s>Service = this.TestEnv.ServiceProvider.GetService<I<s>@Model.Name.Value</s>Service>();
+			this.<s>@Model.Name.Value</s>Service = this.ServiceProvider.GetService<I<s>@Model.Name.Value</s>Service>();
 		}
 
 		[TestMethod]

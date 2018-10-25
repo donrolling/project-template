@@ -1,5 +1,5 @@
 ﻿using Data.Interfaces;
-using Data.Models.Entities;
+using Models.Entities;
 using System;
 
 namespace @Model.Namespace {
