@@ -18,7 +18,7 @@ namespace Common.Models {
 		}
 
 		public static Envelope<T> Ok(T result, string message = "") {
-			var _base = MethodResult.Ok(Status.Success, message);
+			var _base = MethodResult.Ok(message);
 			return new Envelope<T>(_base, result);
 		}
 

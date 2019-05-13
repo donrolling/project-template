@@ -64,10 +64,16 @@ namespace Common.Models {
 
 		public static MethodResult Fail(Status status = Status.Failure) {
 			return new MethodResult(false, string.Empty, status);
-		}
+        }
 
-		public static MethodResult Ok(Status status = Status.Success, string message = "") {
-			return new MethodResult(true, message, status);
-		}
+        public static MethodResult Ok(string message, Status status = Status.Success)
+        {
+            return new MethodResult(false, message, status);
+        }
+
+        public static MethodResult Ok(Status status = Status.Success)
+        {
+            return new MethodResult(false, string.Empty, status);
+        }
 	}
 }
