@@ -39,7 +39,7 @@ namespace Tests
             var config = new ConfigurationBuilder().AddJsonFile(pathToAppSettingsConfig.filePath).Build();
             var services = new ServiceCollection();
             services.AddLogging();
-            //services.Configure<AppSettings>(config);
+            services.Configure<AppSettings>(config.GetSection("AppSettings"));
             services.AddSingleton<IFileProvider>(provider);
             //AppCache
             services.AddMemoryCache();
